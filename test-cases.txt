@@ -1,0 +1,68 @@
+1)	Получение первого поста
+
+Шаги:
+•	Кинуть запрос  ‘https://jsonplaceholder.typicode.com/posts/1’
+•	Сравнить ответ с тем, что возвращается из консоли, если мы передаем:
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  
+Ожидаемый результат:
+•	В ответе на запрос должно вернуться:
+{userId: 1, 
+id: 1, 
+title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 
+body: 'quia et suscipit\nsuscipit recusandae consequuntur …strum rerum est autem sunt rem eveniet architecto'}
+===============================================================================================================
+
+2)	Получение несуществующего поста
+
+Шаги:
+•	Кинуть запрос  ‘https://jsonplaceholder.typicode.com/posts’
+•	Посчитать количество постов(n)
+•	Кинуть запрос ‘https://jsonplaceholder.typicode.com/posts/(n+1)’
+
+Ожидаемый результат:
+•	В ответе на второй запрос запрос должно вернуться:
+	404 и пустое тело.
+===============================================================================================================
+	
+3) Получение поста по некорректному URL
+
+Шаги:
+•	Кинуть запрос  ‘https://jsonplaceholder.typicode.com/posts/11%43’
+
+Ожидаемый результат:
+•	В ответе на второй запрос запрос должно вернуться:
+	404 и пустое тело.
+===============================================================================================================
+
+4) Добавление поста
+
+Шаги:
+•	Кинуть запрос  POST ‘https://jsonplaceholder.typicode.com/posts’ с телом {title: 'title1',
+      body: 'body1',
+      userId: 1,
+      id:101}
+•	Кинуть запрос 'https://jsonplaceholder.typicode.com/posts/101'
+
+Ожидаемый результат:
+•	В ответе на второй запрос запрос должно вернуться:
+	{title: 'foo',
+      body: 'bar',
+      userId: 1,
+      id:101}
+===============================================================================================================
+
+5) Добавление поста с некорректным id
+
+Шаги:
+•	Кинуть запрос  POST ‘https://jsonplaceholder.typicode.com/posts’ с телом {title: 'title2',
+      body: 'body2',
+      userId: 1,
+      id:-1}
+•	Кинуть запрос  POST ‘https://jsonplaceholder.typicode.com/posts’ - если постов больше, чем было, то достаем только что добавленный пост.
+
+Ожидаемый результат:
+•	Добавится пост с id = 101:
+	{title: "title2", body: "body2", userId: 10, id: 101}
