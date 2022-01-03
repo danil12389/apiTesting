@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.danila.app.RestTest" time="2.581" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.danila.app.RestTest" time="2.726" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="13"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\jdk-13\bin"/>
-    <property name="sun.java.command" value="C:\Users\kazel\AppData\Local\Temp\surefire2977337810945715602\surefirebooter10206955847320265395.jar C:\Users\kazel\AppData\Local\Temp\surefire2977337810945715602 2022-01-02T22-50-20_951-jvmRun1 surefire6584240169218330554tmp surefire_05182135894576437494tmp"/>
+    <property name="sun.java.command" value="C:\Users\kazel\AppData\Local\Temp\surefire15271274530279015746\surefirebooter2680498462908511148.jar C:\Users\kazel\AppData\Local\Temp\surefire15271274530279015746 2022-01-03T14-11-31_896-jvmRun1 surefire6080093355832261128tmp surefire_07824740156419992408tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\kazel\Desktop\api\apiTesting\apiTesting\target\test-classes;C:\Users\kazel\Desktop\api\apiTesting\apiTesting\target\classes;C:\Users\kazel\.m2\repository\io\rest-assured\rest-assured\4.4.0\rest-assured-4.4.0.jar;C:\Users\kazel\.m2\repository\org\codehaus\groovy\groovy\3.0.8\groovy-3.0.8.jar;C:\Users\kazel\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.8\groovy-xml-3.0.8.jar;C:\Users\kazel\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\kazel\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\kazel\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\kazel\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\kazel\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\kazel\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\kazel\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\kazel\.m2\repository\io\rest-assured\json-path\4.4.0\json-path-4.4.0.jar;C:\Users\kazel\.m2\repository\org\codehaus\groovy\groovy-json\3.0.8\groovy-json-3.0.8.jar;C:\Users\kazel\.m2\repository\io\rest-assured\rest-assured-common\4.4.0\rest-assured-common-4.4.0.jar;C:\Users\kazel\.m2\repository\io\rest-assured\xml-path\4.4.0\xml-path-4.4.0.jar;C:\Users\kazel\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\kazel\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\kazel\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.2\jakarta.activation-api-1.2.2.jar;C:\Users\kazel\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\kazel\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\kazel\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\kazel\AppData\Local\Temp\surefire2977337810945715602\surefirebooter10206955847320265395.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\kazel\AppData\Local\Temp\surefire15271274530279015746\surefirebooter2680498462908511148.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="13+33"/>
@@ -55,6 +55,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="57.0"/>
   </properties>
-  <testcase name="getFirstPost" classname="com.danila.app.RestTest" time="1.595"/>
-  <testcase name="getNonExistentPost" classname="com.danila.app.RestTest" time="0.528"/>
+  <testcase name="getPostBasedOnBrokenUrl" classname="com.danila.app.RestTest" time="0.897"/>
+  <testcase name="getFirstPost" classname="com.danila.app.RestTest" time="0.619"/>
+  <testcase name="getNonExistentPost" classname="com.danila.app.RestTest" time="0.706"/>
 </testsuite>

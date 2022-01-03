@@ -9,9 +9,7 @@ fetch('https://jsonplaceholder.typicode.com/posts/1')
   
 Ожидаемый результат:
 •	В ответе на запрос должно вернуться:
-{userId: 1, 
-id: 1, 
-title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 
+{userId: 1,id: 1,title: 'sunt aut facere repellat provident occaecati excepturi optio reprehenderit', 
 body: 'quia et suscipit\nsuscipit recusandae consequuntur …strum rerum est autem sunt rem eveniet architecto'}
 ===============================================================================================================
 
@@ -40,10 +38,9 @@ body: 'quia et suscipit\nsuscipit recusandae consequuntur …strum rerum est aut
 4) Добавление поста
 
 Шаги:
-•	Кинуть запрос  POST ‘https://jsonplaceholder.typicode.com/posts’ с телом {title: 'title1',
-      body: 'body1',
-      userId: 1,
-      id:101}
+•	Кинуть запрос  POST ‘https://jsonplaceholder.typicode.com/posts’ с телом {title: 'foo',
+      body: 'bar',
+      userId: 1}
 •	Кинуть запрос 'https://jsonplaceholder.typicode.com/posts/101'
 
 Ожидаемый результат:
